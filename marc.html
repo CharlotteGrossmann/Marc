@@ -1,0 +1,19 @@
+<!doctype HTML>
+<html>
+<head>
+        <title>DA HAST DU</title>
+    </head>
+<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
+<script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>
+  <body style='margin : 0px; overflow: hidden;'>
+    <a href="../index.html">Back</a>
+    <a-scene embedded arjs>
+      <a-marker type="pattern" url="marc.pat">
+        <a-entity gltf-model="./scene.gltf" scale="10 10 10"></a-entity>
+      </a-marker>
+      <a-entity camera></a-entity>
+     
+    </a-scene>
+
+  </body>
+</html>
