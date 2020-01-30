@@ -1,0 +1,188 @@
+@media (max-width: 468px) {
+    body {
+        background-image: url("../background-web-m.png");
+        /* Background image is centered vertically and horizontally at all times */
+        background-position: center center;
+        
+        /* Background image doesn't tile */
+        background-repeat: no-repeat;
+        
+        
+        /* This is what makes the background image rescale based
+            on the container's size */
+        background-size: cover;
+        
+
+    }
+    
+    p{
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        font-size: 2.7vw;
+        padding-top: 15rem;
+    }
+}
+@media (min-width: 468px) and (max-width: 768px) {
+    body {
+        background-image: url("../background-web.png");
+        background-position: center center;
+        
+        /* Background image doesn't tile */
+        background-repeat: no-repeat;
+        
+        /* Background image is fixed in the viewport so that it doesn't move when 
+            the content's height is greater than the image's height */
+        
+        
+        /* This is what makes the background image rescale based
+            on the container's size */
+        background-size: cover;
+  
+    }
+    
+    p{
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        font-size: 2.7vw;
+        padding-top: 15rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1280px) {
+    body {
+        background-image: url("../background-mobile.png");
+        background-position: center center;
+        
+        /* Background image doesn't tile */
+        background-repeat: no-repeat;
+
+        /* This is what makes the background image rescale based
+            on the container's size */
+        background-size: cover;
+  
+    }
+    p{
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        font-size: 2.7vw;
+        padding-top: 15rem;
+    }
+}
+
+
+
+@media (min-width: 1280px) {
+    body {
+        background-image: url("../background-web-l.png");
+        background-position: center center;
+        
+        /* Background image doesn't tile */
+        background-repeat: no-repeat;
+        
+
+        /* This is what makes the background image rescale based
+            on the container's size */
+        background-size: cover;
+    }
+    p{
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        font-size: 2.7vw;
+        padding-top: 5rem;
+    }
+}
+
+body{
+    overflow-x: hidden
+}
+
+#full{
+    height:100vh;
+    width:100vw;
+    overflow-x: hidden
+}
+
+#half{
+    height:100vh;
+    width:100vw;
+    overflow-x: hidden
+}
+
+
+#big-button{
+    margin-top: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40vw;
+    height: 40vw;
+    box-shadow: 1px 4px 10px rgba(0,0,0,0.3);
+    border-radius: 100%;
+}
+
+#big-button:hover{
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.6);
+    background-color: rgb(148, 148, 148);
+    
+}
+
+#big-button, p, #arrow{
+   
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 2.7vw;
+}
+
+
+#arrowAnim {
+    width: 100vw;
+    height: -5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .arrow {
+    width: 3vw;
+    height: 3vw;
+    border: 0.5vw solid;
+    border-color: white transparent transparent white;
+    transform: rotate(-135deg);
+  }
+  
+  
+  .arrowSliding {
+    position: absolute;
+    -webkit-animation: slide 4s linear infinite; 
+            animation: slide 4s linear infinite;
+  }
+  
+  .delay1 {
+    -webkit-animation-delay: 1s; 
+      animation-delay: 1s;
+  }
+  .delay2 {
+    -webkit-animation-delay: 2s; 
+      animation-delay: 2s;
+  }
+  .delay3 {
+    -webkit-animation-delay: 3s; 
+      animation-delay: 3s;
+  }
+  
+  @-webkit-keyframes slide {
+      0% { opacity:0; transform: translateY(-5vh); }  
+     50% { opacity:1; transform: translateY(-0vh); }   
+    100% { opacity:0; transform: translateY(5vh); } 
+  }
+  @keyframes slide {
+      0% { opacity:0; transform: translateY(-5vh); }  
+     50% { opacity:1; transform: translateY(-0vh); }   
+    100% { opacity:0; transform: translateY(5vh); } 
+  }

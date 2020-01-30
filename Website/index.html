@@ -1,18 +1,61 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <html>
-<head>
-        <title>DA HAST DU</title>
-    </head>
-<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
-<script src="https://raw.githack.com/jeromeetienne/AR.js/2.1.4/aframe/build/aframe-ar.js"></script>
-  <body style='margin : 0px; overflow: hidden;'>
-    <a-scene embedded arjs>
-      <a-marker type="pattern" url="ar/marc.pat">
-        <a-entity gltf-model="ar/scene.gltf" scale="10 10 10"></a-entity>
-      </a-marker>
-      <a-entity camera></a-entity>
-     
-    </a-scene>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <section id="full">
+      <p>
+        12 Volt,  LED Queen, <br>
+        Kannst deiner Kreativität nicht entfliehen<br>
+        Laberst nicht so pathetisch<br>
+        Generell eher wenig<br>
+        Son guter Ausgleich<br>
+      </p>
+
+      
+    </section>
+    <div id="arrowAnim">
+      <div class="arrowSliding">
+        <div class="arrow"></div>
+      </div>
+      <div class="arrowSliding delay1">
+        <div class="arrow"></div>
+      </div>
+      <div class="arrowSliding delay2">
+        <div class="arrow"></div>
+      </div>
+      <div class="arrowSliding delay3">
+        <div class="arrow"></div>
+      </div>
+    </div>
+
+    <section id="half">
+      <a href="./marc.html"><img id="big-button"" src="button.png"></a>
+
+    </section>
+
+ 
+
+      
+       
+  
+  
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="js/logic.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+
 
   </body>
 </html>
+      
