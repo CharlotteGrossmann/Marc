@@ -25,7 +25,13 @@
         width: 50vw;
         height: 50vw;
     }
+    #half{
+        height:70vh;
+        width:100vw;
+        overflow-x: hidden
+    }
 }
+
 @media (min-width: 468px) and (max-width: 768px) {
     body {
         background-image: url("../background-web.png");
@@ -54,11 +60,22 @@
         width: 40vw;
         height: 40vw;
     }
+    #half{
+        height:80vh;
+        width:100vw;
+        overflow-x: hidden
+    }
 }
+
 @media only screen and (max-width: 768px){
   
     .arrow{
         margin-top:-15vh;
+    }
+    #half{
+        height:70vh;
+        width:100vw;
+        overflow-x: hidden
     }
      
     
@@ -87,6 +104,11 @@
         width: 40vw;
         height: 40vw;
     }
+    #half{
+        height:100vh;
+        width:100vw;
+        overflow-x: hidden
+    }
 }
 
 
@@ -114,6 +136,11 @@
         width: 30vw;
         height: 30vw;
     }
+    #half{
+        height:100vh;
+        width:100vw;
+        overflow-x: hidden
+    }
 }
 
 body{
@@ -121,12 +148,6 @@ body{
 }
 
 #full{
-    height:100vh;
-    width:100vw;
-    overflow-x: hidden
-}
-
-#half{
     height:100vh;
     width:100vw;
     overflow-x: hidden
@@ -151,7 +172,6 @@ body{
 }
 
 #big-button, p, #arrow{
-   
     display: flex; 
     align-items: center; 
     justify-content: center; 
